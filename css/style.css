@@ -1,0 +1,97 @@
+h1, h2, h3 {
+	font-family: 'Merienda', cursive;
+}
+
+h3 {
+	color: #2F4073;
+}
+
+.logo {
+	background-color: #061339;
+}
+
+.logo h1 {
+	color: #FFF;
+	font-size: 2rem;
+}
+
+.header {
+	background-image: url("../img/background.jpg");
+}
+.header h2 {
+	text-align: center;
+	line-height: 10.5rem;
+	color: #FFF;
+	text-shadow: 2px 2px #000;
+}
+
+
+main {
+	background-color: #eee;
+	padding: 3% 0;
+}
+
+
+.form {
+	border: 1px solid lightgrey;
+	padding: 4% 2%;
+}
+
+.form p {
+	font-weight: bold;
+}
+
+#select {
+	width: 100%;
+}
+
+.red {
+	border: 1px solid red;
+}
+
+select:focus {
+	outline-width: 0px;
+}
+
+textarea {
+	width: 100%;
+}
+
+textarea:focus {
+	outline-width: 0px;
+}
+
+button {
+	width: 100%;
+}
+
+footer {
+	background-color: #ddd;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.block-footer h3 {
+	margin: 3rem 0;
+	font-size: 3rem;
+}
+
+.cathead {
+	background-color: #7885A5;
+	padding: 0;
+	transition: all 0.5s ease-out;
+}
+
+.cathead:hover {
+	background-color: #061339;
+}
+
+#catimg {
+	width: 100%;
+}
+
+.copyright {
+	background-color: #061339;
+	color: #FFF;
+	line-height: 2.5rem;
+}

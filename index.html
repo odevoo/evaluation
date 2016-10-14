@@ -11,6 +11,10 @@
 
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
+	<!--Declaration police -->
+
+	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+
 	<!-- Feuille de style du projet -->
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,19 +23,135 @@
 
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 
+	<!--Déclaration Javascript bootstrap -->
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
 	<!-- Parametrage du viexport -->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Titre -->
 
-	<title></title>
+	<title>OhMyCats</title>
 </head>
 <body>
 
+	<div class="logo container-fluid">
+		<h1 class="container">OhMyCats !</h1>
+	</div>
+	<header class="header container-fluid">
+		<h2>Adoptez un chat trop bon !<h2>
+		</header>
+		<main class="container-fluid">
+			<div class="container inner-main">
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<h3 class="text-center">Les chats à adopter</h3>
+						<div class="form">
 
-	<!-- Déclaration des différents scripts -->
+						<!--Formulaire-->
+							<form id="catform">
+								<p>Choix du chat:</p>
+								<!--menu déroulant-->
+								<select required id="select" name="chat" size="1">
+									<option value="">--Sélectionnez--</option>
+									<option value="Sushi">Sushi</option>
+									<option value="Maki">Maki</option>
+									<option value="Sashimi">Sashimi</option>
+									<option value="Yakitori">Yakitori</option>
+									<option value="Onigri">Onigri</option>
+								</select>
 
-	<script type="text/javascript" src="js/script.js" ></script>
-</body>
-</html>
+								<p>Raison d'adoption:</p>
+								<!--champ de texte-->
+								<textarea required id="textarea" name="textarea" minlength="15" rows="10" cols="40" placeholder="Saisissez ici les raisons pour lesquelles vous souhaitez adopter ce chat..."></textarea>
+								<button id="btn" class="btn btn-success">Envoyer</button>
+							</form>	
+						</div>
+					</div>
+					<div class="col-xs-12  col-md-8">
+					<!--Caroussel Bootstrap-->
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="img/chat_1.jpg">
+									<div class="carousel-caption">
+										Sushi
+									</div>
+								</div>
+								<div class="item">
+									<img src="img/chat_2.jpg">
+									<div class="carousel-caption">
+										Maki
+									</div>
+								</div>
+								<div class="item">
+									<img src="img/chat_3.jpg">
+									<div class="carousel-caption">
+										Sashimi
+									</div>
+								</div>
+								<div class="item">
+									<img src="img/chat_4.jpg">
+									<div class="carousel-caption">
+										Yakitori
+									</div>
+								</div>
+								<div class="item">
+									<img src="img/chat_5.jpg">
+									<div class="carousel-caption">
+										Onigri
+									</div>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="container-fluid">
+			<div class="container block-footer">
+				<div class="col-xs-12 col-md-9">
+					<h3>Nos chats à adopter...</h3>
+					<p> Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus.</p>
+					<p>Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta petamus, amicorum causa honesta faciamus, ne exspectemus quidem, dum rogemur; studium semper adsit, cunctatio absit; consilium vero dare audeamus libere. Plurimum in amicitia amicorum bene suadentium valeat auctoritas, eaque et adhibeatur ad monendum non modo aperte sed etiam acriter, si res postulabit, et adhibitae pareatur.</p>
+				</div>
+				<div class="col-xs-12 col-md-3 cathead">
+					<img class="img-responsive" id="catimg" src="img/tete-chat.png">
+				</div>
+			</div>
+
+			<div class="copyright container-fluid">
+				<p class="text-right">&copy OhMyCats</p>
+			</div>
+		</footer>
+
+
+
+		<!-- Déclaration des différents scripts -->
+
+		<script type="text/javascript" src="js/script.js" ></script>
+	</body>
+	</html>
